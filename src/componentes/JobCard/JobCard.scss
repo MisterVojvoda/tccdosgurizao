@@ -1,0 +1,60 @@
+.job-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .cracha {
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+
+    &-remote { background: #ebf8ff; color: #3182ce; }
+    &-presencial { background: #e6fffa; color: #319795; }
+  }
+
+  h3 { font-size: 18px; color: #1a202c; }
+  .empresa, .local { font-size: 13px; color: #718096; display: flex; align-items: center; gap: 4px; }
+
+  .remuneracao {
+    background: #f7fafc;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    span { display: block; color: #a0aec0; }
+    strong { color: #2d3748; }
+  }
+
+  .descricao { font-size: 13px; color: #4a5568; margin: 4px 0; }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    .tag {
+      background: #edf2f7;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: #4a5568;
+    }
+  }
+
+  .candidatar {
+    margin-top: auto;
+    background-color: #2b6cb0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+
+    &:hover { background-color: #2c5282; }
+  }
+}
